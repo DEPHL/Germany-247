@@ -2,64 +2,81 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Германия 24/7 — Новости</title>
+  <title>Германия 24/7 — Новости Германии</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background-color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
       color: #333;
     }
     header {
-      border-bottom: 2px solid #0082c8;
+      background-color: #004080;
+      color: white;
+      padding: 20px 40px;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+    .news-item {
+      background: white;
+      border-radius: 5px;
+      padding: 20px;
       margin-bottom: 20px;
-      padding-bottom: 10px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
     }
-    header h1 {
-      color: #0082c8;
-      margin: 0;
+    .news-item:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
-    article {
-      margin-bottom: 30px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 15px;
-    }
-    article h2 {
-      color: #005a9c;
-      margin-top: 0;
-    }
-    article time {
+    .news-date {
+      font-size: 14px;
       color: #666;
-      font-size: 0.9em;
+      margin-bottom: 8px;
+    }
+    .news-title {
+      font-size: 20px;
+      margin: 0 0 10px 0;
+      color: #004080;
+    }
+    .news-summary {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #444;
     }
     footer {
-      margin-top: 40px;
-      font-size: 0.8em;
-      color: #999;
       text-align: center;
-      border-top: 1px solid #eee;
-      padding-top: 15px;
+      color: #777;
+      font-size: 14px;
+      padding: 20px 0;
+      border-top: 1px solid #ddd;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Германия 24/7</h1>
-    <p>Ежедневно немецкие новости на русском языке</p>
-  </header>
-
+  <header>Германия 24/7 — Новости Германии</header>
   <main>
-  <div id="news">
-    <p>Новости будут отображаться здесь после настройки Netlify CMS.</p>
-  </div>
-</main>
-
-
+    <article class="news-item">
+      <div class="news-date">29 июля 2025</div>
+      <h2 class="news-title">Заголовок первой новости</h2>
+      <p class="news-summary">Краткое описание или вводный абзац новости, чтобы заинтересовать читателя...</p>
+    </article>
+    <article class="news-item">
+      <div class="news-date">28 июля 2025</div>
+      <h2 class="news-title">Вторая новость про важное событие</h2>
+      <p class="news-summary">Краткое содержание второй новости, немного деталей и интересных фактов.</p>
+    </article>
+    <!-- Здесь будут новые новости -->
+  </main>
   <footer>
-    &copy; 2025 Германия 24/7. Все права защищены.
+    © 2025 Германия 24/7 — Все права защищены
   </footer>
 </body>
 </html>
+
